@@ -1,4 +1,54 @@
 body {
-  background-color: blue;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50rem;
+  height: 70rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Gotham Rounded;
+  background-color: darkblue;
+}
+
+.question {
+  margin-top: .5rem;
+  font-size: 2rem;
+}
+
+.btna {
+  margin-top: 1rem;
+  height: 5rem;
+  width: 13rem;
+  font-size: 2rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.btn {
+  height: 4rem;
+  width: 14rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.quiz {
+  width: 100rem;
+  max-width: 80%;
+  background-color: darkgray;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 1rem 2px;
+          box-shadow: 0 0 1rem 2px;
 }
 /*# sourceMappingURL=main.css.map */
