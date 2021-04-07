@@ -20,9 +20,9 @@ body {
 }
 
 .question {
-  margin-top: .5rem;
+  margin-top: 1rem;
   font-size: 2rem;
-  margin-left: 43%;
+  margin-left: 40%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -30,14 +30,19 @@ body {
 
 .btna {
   margin-top: 1rem;
+  margin-left: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 5rem;
-  width: 13rem;
+  width: 17rem;
   font-size: 2rem;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(darkgrey), to(white));
+  background-image: linear-gradient(to top right, darkgrey, white);
 }
 
 .btn {
@@ -52,10 +57,50 @@ body {
 .quiz {
   width: 100rem;
   max-width: 80%;
-  background-color: darkgray;
+  background-color: #f8f8f8;
   border-radius: 5px;
   padding: 1rem;
-  -webkit-box-shadow: 0 0 1rem 2px;
-          box-shadow: 0 0 1rem 2px;
+  -webkit-box-shadow: 0 0 3rem 4px;
+          box-shadow: 0 0 3rem 4px;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.start-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 20px 30px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#3b7e15), to(#22d412));
+  background-image: linear-gradient(to top right, #3b7e15, #22d412);
+  color: white;
+  border-radius: 5%;
+}
+
+.start-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-radius: 0%;
+  color: gold;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#204908), to(#15750c));
+  background-image: linear-gradient(to top right, #204908, #15750c);
+}
+
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

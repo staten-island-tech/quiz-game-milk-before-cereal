@@ -14,19 +14,24 @@ body {
 }
 
 .question {
-  margin-top: .5rem;
+  margin-top: 1rem;
   font-size: 2rem;
-  margin-left: 43%;
+  margin-left: 40%;
   justify-content: center;
 }
 .btna {
   margin-top: 1rem;
+  margin-left: 2rem;
+  flex-wrap: wrap;
   height: 5rem;
-  width: 13rem;
+  width: 17rem;
   font-size: 2rem;
   text-align: center;
   justify-content: center;
   position: relative;
+  background-image: linear-gradient(to top right, darkgrey
+  , white);
+
 }
 
 .btn {
@@ -41,8 +46,41 @@ body {
 .quiz {
   width: 100rem;
   max-width: 80%;
-  background-color: darkgray;
+  background-color: rgb(248, 248, 248);
   border-radius: 5px;
   padding: 1rem;
-  box-shadow: 0 0 1rem 2px;
+  box-shadow: 0 0 3rem 4px;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.start-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 20px 30px;
+  background-image: linear-gradient(to top right, rgb(59, 126, 21)
+  , rgb(34, 212, 18));
+  color: white;
+  border-radius: 5%;
+}
+
+.start-btn:hover {
+  transform: scale(1.2);
+  border-radius: 0%;
+  color: gold;
+  background-image: linear-gradient(to top right, rgb(32, 73, 8)
+  , rgb(21, 117, 12));;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
 }
