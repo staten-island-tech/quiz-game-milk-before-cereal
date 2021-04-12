@@ -9,7 +9,6 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  font-family: Gotham Rounded;
   background-color: darkblue;
 }
 
@@ -29,9 +28,7 @@ body {
   text-align: center;
   justify-content: center;
   position: relative;
-  background-image: linear-gradient(to top right, darkgrey
-  , white);
-
+  background-image: linear-gradient(to top right, darkgrey, white);
 }
 
 .btn {
@@ -61,8 +58,11 @@ body {
   font-weight: bold;
   padding: 10px 20px;
   margin: 20px 30px;
-  background-image: linear-gradient(to top right, rgb(59, 126, 21)
-  , rgb(34, 212, 18));
+  background-image: linear-gradient(
+    to top right,
+    rgb(59, 126, 21),
+    rgb(34, 212, 18)
+  );
   color: white;
   border-radius: 5%;
 }
@@ -71,8 +71,11 @@ body {
   transform: scale(1.2);
   border-radius: 0%;
   color: gold;
-  background-image: linear-gradient(to top right, rgb(32, 73, 8)
-  , rgb(21, 117, 12));;
+  background-image: linear-gradient(
+    to top right,
+    rgb(32, 73, 8),
+    rgb(21, 117, 12)
+  );
 }
 
 .control {
