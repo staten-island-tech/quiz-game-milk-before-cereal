@@ -11,11 +11,11 @@ const answerSelection = document.getElementById('answers')
 
 startButton.addEventListener('click', startGame) 
 nextButton.addEventListener('click', () => {
-  
+  currentQuestionIndex++
+  setNextQuestion()
 })
 
 function startGame() {
-    console.log('Started')
     startButton.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -31,10 +31,10 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   questionElement.innerText = question.question //Display question text
-  question.answer.forEach(answer => { //Display choices
+  question.answers.forEach(answer => {
     const button = document.createElement('button') 
-    button.innerText = answer.text
-    button.classList.add('btn')
+    button.innerText = answer.Text
+    button.classList.add('btna')
     if (answer.correct) {
       button.dataset.correct = answer.correct
     }
@@ -44,6 +44,7 @@ function showQuestion(question) {
 }
 
 function resetState () {
+  clearStatusClass(document.body)
   nextButton.classList.add('hide')
   while (answerSelection.firstChild) {
     answerSelection.removeChild
@@ -86,7 +87,7 @@ function clearStatusClass(element) {
 const questions = [
     {
       question: 'Who is this Pokemon?',
-      answer: [
+      answers: [
         { Text: 'pokemon1', correct: false },
         { Text: 'pokemon2', correct: false },
         { Text: 'pokemon3', correct: true },
@@ -95,7 +96,7 @@ const questions = [
     },
     {
       question: 'What is this Pokemon?',
-      answer: [
+      answers: [
         { Text: 'choice1', correct: true },
         { Text: 'choice2', correct: false },
         { Text: 'choice2', correct: false },
@@ -104,10 +105,3 @@ const questions = [
     },
   ];
 
-//Submit Answer//
-
-//If Correct Answer is submitted, display correct modal
-//Else display incorrect modal
-
-//If question # < questions.length display next question
-//else display results
