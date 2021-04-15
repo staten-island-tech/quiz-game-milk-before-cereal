@@ -17,22 +17,20 @@ body {
   margin-left: 5%;
   font-size: 2rem;
   font-weight: bold;
-  font-style:italic;
+  font-style: italic;
   text-decoration: underline rgb(3, 3, 53);
 }
 
 .btn-grid {
- margin: 1.5rem;
+  margin: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: .5rem;
-  
+  gap: 0.5rem;
 }
 
 .btna {
   font-size: 2rem;
-  background-image: linear-gradient(to top right, darkgrey
-  , white);
+  background-image: linear-gradient(to top right, darkgrey, white);
 }
 
 .btn {
