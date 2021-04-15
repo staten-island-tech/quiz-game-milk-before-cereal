@@ -7,7 +7,7 @@ const questionContainElement = document.getElementById("questionsection");
 const questionElement = document.getElementById("question");
 const answerSelectionElement = document.getElementById("answers");
 
-//let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame) 
 nextButton.addEventListener('click', () => {
@@ -17,7 +17,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
     startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random() - .0)
     currentQuestionIndex = 0
     questionContainElement.classList.remove('hide') 
     setNextQuestion()
@@ -39,15 +39,15 @@ function showQuestion(question) {
       button.dataset.correct = answer.correct;
     }
     button.addEventListener("click", selectAnswer);
-    answerSelection.appendChild(button);
+    answerSelectionElement.appendChild(button);
   });
 }
 
 function resetState () {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
-  while (answerSelection.firstChild) {
-    answerSelection.removeChild(answerSelection.firstChild);
+  while (answerSelectionElement.firstChild) {
+    answerSelectionElement.removeChild(answerSelectionElement.firstChild);
   }
 }
 
@@ -84,20 +84,81 @@ const questions = [
     {
       question: 'Who is this Pokemon?',
       answers: [
-        { Text: 'pokemon1', correct: false },
-        { Text: 'pokemon2', correct: false },
-        { Text: 'pokemon3', correct: true },
-        { Text: 'pokemon4', correct: false }
+        { Text: 'Manaphy', correct: false },
+        { Text: 'Marill', correct: false },
+        { Text: 'Phione', correct: true },
+        { Text: 'Mantyke', correct: false }
       ],
     },
     {
-      question: 'What is this Pokemon?',
+      question: 'Who is this?',
       answers: [
-        { Text: 'choice1', correct: true },
-        { Text: 'choice2', correct: false },
-        { Text: 'choice2', correct: false },
-        { Text: 'choice3', correct: false }
+        { Text: 'Florges', correct: true },
+        { Text: 'Flower', correct: false },
+        { Text: 'Roserade', correct: false },
+        { Text: 'Floetta', correct: false }
       ],
+    },
+    {
+      question: 'What is the name of this Pokemon',
+      answers: [
+        { Text: 'Not a pokemon', correct: false },
+        { Text: 'Sinistea', correct: false },
+        { Text: 'Kettlen', correct: false },
+        { Text: 'Polteageist', correct: true }
+      ],
+    },
+    {
+      question: 'Can you guess this Pokemon?',
+      answers: [
+        { Text: 'Morgrem', correct: true },
+        { Text: 'Literally a Digimon', correct: false },
+        { Text: 'Impilimp', correct: false },
+        { Text: 'Coboli', correct: false }
+      ],
+    },
+    {
+      question: 'WHOS THAT POKEMON?',
+      answers: [
+        { Text: 'The Pikachu Meme', correct: true },
+        { Text: 'Pikachu', correct: true },
+        { Text: 'Suprised Pikachu', correct: true },
+        { Text: 'Raichu.', correct: false }
+      ],
+    },
+    {
+      question: 'Qui est hic?',
+      answers: [
+        { Text: 'Flaeron', correct: false },
+        { Text: 'Fireon', correct: false },
+        { Text: 'Growlithe', correct: false },
+        { Text: 'Flareon', correct: true }
+      ],
+    },
+    {
+      question: 'I bet you dont know this one',
+      answers: [
+        { Text: 'Muk', correct: false },
+        { Text: 'Sludgin', correct: false },
+        { Text: 'Grimer', correct: true },
+        { Text: 'Gengar', correct: false }
+      ],
+    },
+    {
+      question: 'Кто это?',
+      answers: [
+        { Text: 'Digimon', correct: false },
+        { Text: 'Yveltal', correct: false },
+        { Text: 'Zygarde', correct: false },
+        { Text: 'Eternatus', correct: true }
+      ],
+    },
+    {
+      question: 'Is this acceptable',
+      answers: [
+        { Text: 'Yes', correct: false },
+        { Text: 'Absolutely Not', correct: true }
+      ]
     },
   ];
 
