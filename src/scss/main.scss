@@ -14,21 +14,25 @@ body {
 
 .question {
   margin-top: 1rem;
+  margin-left: 5%;
   font-size: 2rem;
-  margin-left: 40%;
-  justify-content: center;
+  font-weight: bold;
+  font-style:italic;
+  text-decoration: underline rgb(3, 3, 53);
 }
+
+.btn-grid {
+ margin: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: .5rem;
+  
+}
+
 .btna {
-  margin-top: 1rem;
-  margin-left: 2rem;
-  flex-wrap: wrap;
-  height: 5rem;
-  width: 17rem;
   font-size: 2rem;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  background-image: linear-gradient(to top right, darkgrey, white);
+  background-image: linear-gradient(to top right, darkgrey
+  , white);
 }
 
 .btn {
