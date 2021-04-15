@@ -6,6 +6,7 @@ const nextButton = document.getElementById("next-btn");
 const questionContainElement = document.getElementById("questionsection");
 const questionElement = document.getElementById("question");
 const answerSelectionElement = document.getElementById("answers");
+const imageElement = document.getElementById("image");
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -13,20 +14,27 @@ startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
+  replaceImage()
 })
 
 function startGame() {
-    startButton.classList.add('hide')
+    startButton.classList.add('hide') 
     shuffledQuestions = questions.sort(() => Math.random() - .0)
-    currentQuestionIndex = 0
+    currentQuestionIndex = 0  
     questionContainElement.classList.remove('hide') 
-    setNextQuestion()
+    setNextQuestion()   
+   imageElement.classList.remove('hide')
+
 }
 
 //Insert Question//
 function setNextQuestion() {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+
+function replaceImage(){
+  document.getElementById("x").src='image/Flower.jpg';
 }
 
 function showQuestion(question) {
@@ -100,7 +108,7 @@ const questions = [
       ],
     },
     {
-      question: 'What is the name of this Pokemon',
+      question: 'What is the name of this Pokemon?',
       answers: [
         { Text: 'Not a pokemon', correct: false },
         { Text: 'Sinistea', correct: false },
@@ -159,6 +167,10 @@ const questions = [
         { Text: 'Yes', correct: false },
         { Text: 'Absolutely Not', correct: true }
       ]
+      
     },
+    {
+      question: 'Congragulation! You finished'
+    }
   ];
 

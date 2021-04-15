@@ -16,31 +16,33 @@ body {
           align-items: center;
   position: absolute;
   font-family: Gotham Rounded;
-  background-color: darkblue;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(182, 76, 76, 0.322)), color-stop(49%, rgba(243, 186, 186, 0.37)), to(rgba(255, 255, 255, 0.329))), url("img/pokeball.jpg");
+  background-image: linear-gradient(180deg, rgba(182, 76, 76, 0.322) 0%, rgba(243, 186, 186, 0.37) 49%, rgba(255, 255, 255, 0.329) 100%), url("img/pokeball.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .question {
   margin-top: 1rem;
+  margin-left: 5%;
   font-size: 2rem;
-  margin-left: 40%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+  -webkit-text-decoration: underline #030335;
+          text-decoration: underline #030335;
+}
+
+.btn-grid {
+  margin: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  gap: 0.5rem;
 }
 
 .btna {
-  margin-top: 1rem;
-  margin-left: 2rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 5rem;
-  width: 17rem;
   font-size: 2rem;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
   background-image: -webkit-gradient(linear, left bottom, right top, from(darkgrey), to(white));
   background-image: linear-gradient(to top right, darkgrey, white);
 }
@@ -102,5 +104,17 @@ body {
 
 .hide {
   display: none;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
