@@ -39,6 +39,9 @@ body {
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
   gap: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btna {
