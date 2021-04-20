@@ -6,7 +6,6 @@ const nextButton = document.getElementById("next-btn");
 const questionContainElement = document.getElementById("questionsection");
 const questionElement = document.getElementById("question");
 const answerSelectionElement = document.getElementById("answers");
-const imageElement = document.getElementById("x");
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -14,6 +13,7 @@ startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
+  
 })
 
 function startGame() {
@@ -40,7 +40,7 @@ function showQuestion(question) {
   question.answers.forEach(answer => {
     const button = document.createElement('button') 
     button.innerText = answer.Text
-    button.classList.add('btna')
+    button.classList.add('btn')
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
@@ -65,19 +65,19 @@ function selectAnswer(e) {
     setStatusClass(button, button.dataset.correct);
   });
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide');
+    nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Restart';
-    startButton.classList.remove('hide');
+    startButton.innerText = 'Restart'
+    startButton.classList.remove('hide')
   }
 }
 
 function setStatusClass(element, correct) {
-  clearStatusClass(element);
+  clearStatusClass(element)
   if (correct) {
-    element.classList.add('correct');
+    element.classList.add('correct')
   } else {
-    element.classList.add('wrong');
+    element.classList.add('wrong')
   }
 }
 
@@ -171,9 +171,10 @@ const questions = [
       question: 'Congragulation! You finished'
     }
   ];
-
+  
   var image = document.getElementById('x');
   var imageArray = ['/front.8c00b044.jpg','/one.6d9a1e88.jpg',
   '/two.e66151c5.jpg','/three.1551a0c4.jpg','/four.0fd1ab7b.jpg','/five.4a723cfc.jpg',
   '/six.e48d2430.jpg','/seven.70007d00.jpg','/eight.c10fb99a.png','/nine.d6673d48.jpg', ];
   var imageIndex = 1; 
+
