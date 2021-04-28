@@ -173,15 +173,8 @@ const questions = [
   ];
   
   var image = document.getElementById('x');
-<<<<<<< HEAD
-  var imageArray = ['/front.jpg','https://images.app.goo.gl/N66qRtptcuzSJ5iv8','https://images.app.goo.gl/8cLD33sszkeh3mwQ9',
-  'https://images.app.goo.gl/e6HwCdSKPjVCeytU9','https://images.app.goo.gl/3BPtWY48mjfYvZ617',
-  'https://images.app.goo.gl/ffy6b8Vo4GXwXtST7', 'https://images.app.goo.gl/Pim3YBvMKJ4UjDNG8','https://images.app.goo.gl/3vV2QvABg3BfDwwc6',
-  'https://images.app.goo.gl/QQUWDsQXoZ7MUu1u7','https://images.app.goo.gl/po43CWYdb7czz6Wf6', ];
-=======
-  var imageArray = ['/front.8c00b044.jpg','image/one.6d9a1e88.jpg',
+  var imageArray = ['/front.8c00b044.jpg','/one.6d9a1e88.jpg',
   '/two.e66151c5.jpg','/three.1551a0c4.jpg','/four.0fd1ab7b.jpg','/five.4a723cfc.jpg',
   '/six.e48d2430.jpg','/seven.70007d00.jpg','/eight.c10fb99a.png','/nine.d6673d48.jpg', ];
->>>>>>> parent of d2b2164 ((╯°□°）╯︵ ┻━┻)
   var imageIndex = 1; 
 

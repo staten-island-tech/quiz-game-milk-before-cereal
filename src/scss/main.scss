@@ -21,12 +21,6 @@ body {
   background-attachment: fixed;
 }
 
-:root {
-  --hue-neutral: 200;
-  --hue-wrong: 0;
-  --hue-correct: 145;
-}
-
 .question {
   margin-top: 1rem;
   margin-left: 5%;
@@ -48,19 +42,15 @@ body {
   padding-left: 120%;
   font-size: 2rem;
   background-image: linear-gradient(to top right, darkgrey, white);
-  --hue: var(--hue-correct);
 }
 
-.btna.correct {
-  --hue: var(--hue-correct);
-  color: black;
+
+.correct {
+  background-color: green;
 }
 
-.btn.wrong {
-  --hue: var(--hue-wrong);
-}
-.btn.wrong {
-  --hue: var(--hue-wrong);
+.wrong {
+  background-color: red;
 }
 
 .btn {
