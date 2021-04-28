@@ -173,8 +173,8 @@ const questions = [
   ];
   
   var image = document.getElementById('x');
-  var imageArray = ['/front.jpg','/one.1ea63781.jpg',
-  'two.c290eb48.jpg','/three.1551a0c4.jpg','/four.0fd1ab7b.jpg','/five.4a723cfc.jpg',
+  var imageArray = ['/front.jpg','image/one.1ea63781.jpg',
+  'image/two.c290eb48.jpg','/three.d0824aa1.jpg','/four.0fd1ab7b.jpg','/five.4a723cfc.jpg',
   '/six.e48d2430.jpg','/seven.70007d00.jpg','/eight.c10fb99a.png','/nine.d6673d48.jpg', ];
   var imageIndex = 1; 
 
